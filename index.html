@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetCard - Mua bán và đổi thẻ giá rẻ</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo.png" alt="NetCard Logo" />
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="/">Trang chủ</a>
+            <a href="#cards">Thẻ cào</a>
+            <a href="#gamecards">Thẻ game</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="hero">
+            <h1>NetCard – Nạp thẻ siêu nhanh, chiết khấu tốt</h1>
+            <p>Mua hoặc thẻ cào – thẻ game trực tuyến giá rẻ</p>
+        </section>
+
+        <section id="cards" class="card-list">
+            <h2>Thẻ cào điện thoại</h2>
+            <div id="telcoList"></div>
+        </section>
+
+        <section id="gamecards" class="card-list">
+            <h2>Thẻ game</h2>
+            <div id="gameList"></div>
+        </section>
+    </main>
+
+    <script src="src/api/config.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
