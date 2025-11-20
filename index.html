@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetCard - Mua bán và đổi thẻ giá rẻ</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
-<body>
 
-    <!-- HEADER -->
+<body>
+    <!-- Header -->
     <header class="header">
-        <div class="logo">
-            <a href="/">
-                <img src="img/logo.png" alt="NetCard Logo" />
+        <div class="container header-content">
+            <a href="https://netcard.vercel.app" class="logo">
+                <img src="./public/img/logo.png" alt="NetCard Logo">
+                <span>NetCard</span>
             </a>
+
+            <nav class="nav">
+                <a href="./views/buy-card.html">Mua Thẻ</a>
+                <a href="./views/history.html">Lịch Sử</a>
+                <a href="./views/login.html" class="login-btn">Đăng Nhập</a>
+            </nav>
         </div>
-        <nav class="nav">
-            <a href="/">Trang chủ</a>
-            <a href="#cards">Thẻ cào</a>
-            <a href="#gamecards">Thẻ game</a>
-        </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section class="hero">
-            <h1>NetCard – Nạp thẻ siêu nhanh, chiết khấu tốt</h1>
-            <p>Mua hoặc thẻ cào – thẻ game trực tuyến giá rẻ</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>NetCard Uy Tín Vàng - Giá Siêu Rẻ</h1>
+            <p>NetCard luôn đặt uy tín lên hàng đầu, và nói không với lừa đảo.</p>
+            <a href="./views/buy-card.html" class="btn-main">Mua thẻ ngay</a>
+        </div>
+    </section>
 
-        <section id="cards" class="card-list">
-            <h2>Thẻ cào điện thoại</h2>
-            <div id="telcoList"></div>
-        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 NetCard – Hệ thống đổi thẻ cào tự động.</p>
+    </footer>
 
-        <section id="gamecards" class="card-list">
-            <h2>Thẻ game</h2>
-            <div id="gameList"></div>
-        </section>
-    </main>
-
-    <script src="src/api/config.js"></script>
-    <script src="src/js/app.js"></script>
 </body>
 </html>
