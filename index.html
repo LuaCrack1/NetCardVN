@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetCard - Mua bán và đổi thẻ giá rẻ</title>
-    <link rel="stylesheet" href="./public/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetCard - Hệ thống bán thẻ tự động</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/public/css/style.css">
+
+  <link rel="icon" type="image/png" href="/public/img/logo.png" />
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container header-content">
-            <a href="https://netcard.vercel.app" class="logo">
-                <img src="./public/img/NetCard Logo.png" alt="NetCard Logo">
-                <span>NetCard</span>
-            </a>
 
-            <nav class="nav">
-                <a href="./views/buy-card.html">Mua Thẻ</a>
-                <a href="./views/history.html">Lịch Sử</a>
-                <a href="./views/login.html" class="login-btn">Đăng Nhập</a>
-            </nav>
-        </div>
-    </header>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/public/img/logo.png" alt="NetCard Logo">
+        <span>NetCard</span>
+      </a>
+      <nav>
+        <a href="/views/login.html">Đăng nhập</a>
+        <a href="/views/buy-card.html">Mua thẻ</a>
+        <a href="/views/history.html">Lịch sử</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>NetCard Uy Tín Vàng - Giá Siêu Rẻ</h1>
-            <p>NetCard luôn đặt uy tín lên hàng đầu, và nói không với lừa đảo.</p>
-            <a href="./views/buy-card.html" class="btn-main">Mua thẻ ngay</a>
-        </div>
-    </section>
+  <section class="hero">
+    <h1>NetCard – Hệ thống bán thẻ cào & thẻ game tự động</h1>
+    <p>Tốc độ - Uy tín - Chính xác từng giao dịch</p>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 NetCard – Hệ thống đổi thẻ cào tự động.</p>
-    </footer>
+    <a href="/views/buy-card.html" class="btn">Mua thẻ ngay</a>
+  </section>
 
+  <script src="/public/js/main.js"></script>
 </body>
 </html>
