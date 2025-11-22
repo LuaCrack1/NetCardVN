@@ -1,0 +1,23 @@
+{
+  "name": "Card Auto System",
+  "short_name": "CardAuto",
+  "lang": "vi",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4c6ef5",
+  "description": "Hệ thống nạp thẻ tự động, kết nối NCC 1–2–3.",
+  "icons": [
+    {
+      "src": "/public/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
