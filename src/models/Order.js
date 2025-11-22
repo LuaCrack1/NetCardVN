@@ -1,13 +1,20 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const OrderSchema = new mongoose.Schema({
-  userId: String,
-  network: String,
-  amount: Number,
-  serial: String,
-  code: String,
-  status: { type: String, default: "processing" },
-  createdAt: { type: Date, default: Date.now },
-});
+const OrderSchema = new mongoose.Schema(
+  {
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    telco: String,
+    amount: Number,
+    serial: String,
+    code: String,
+    requestId: String,
 
-module.exports = mongoose.model("Order", OrderSchema);
+    provider: String, // NCC1 | NCC2 | NCC3
+    status: { type: String, default: "pending" }, // pending | success | wrong | refund
+    nccResponse: { type: Object, default: {} }
+  },
+  { timestamps: true }
+);
+
+export default mongoose.model("Order", OrderSchema);
+
