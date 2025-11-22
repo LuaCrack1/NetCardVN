@@ -1,64 +1,49 @@
 body {
-  font-family: "Inter", sans-serif;
-  background: #f0f2f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef1f7;
 }
 
-.admin-header {
-  background: #ff4800;
-  color: white;
-  padding: 18px;
-  font-size: 22px;
-  font-weight: bold;
+.sidebar {
+    width: 240px;
+    background: #1f2937;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
 }
 
-.stats {
-  display: flex;
-  gap: 15px;
-  padding: 20px;
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
 }
 
-.stats .card {
-  flex: 1;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+.sidebar a:hover {
+    background: #374151;
 }
 
-h2 {
-  margin: 20px;
+.content {
+    margin-left: 240px;
+    padding: 25px;
 }
 
 table {
-  width: 95%;
-  margin: auto;
-  background: white;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  overflow: hidden;
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-thead {
-  background: #ff4800;
-  color: white;
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
 }
 
-th, td {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-}
-
-tr:nth-child(even) {
-  background: #fafafa;
-}
-
-ul {
-  width: 90%;
-  margin: auto;
-  background: white;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+table th {
+    background: #4c6ef5;
+    color: white;
 }
