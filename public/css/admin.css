@@ -1,0 +1,64 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f0f2f5;
+}
+
+.admin-header {
+  background: #ff4800;
+  color: white;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+.stats .card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin: 20px;
+}
+
+table {
+  width: 95%;
+  margin: auto;
+  background: white;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #ff4800;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+ul {
+  width: 90%;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
