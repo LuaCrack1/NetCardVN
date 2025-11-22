@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mua Thẻ - NetCard</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="/" class="logo">
+    <img src="/public/img/logo.png">
+    <span>NetCard</span>
+  </a>
+</header>
+
+<section class="buy-box">
+  <h2>Mua thẻ cào</h2>
+
+  <form id="buyForm">
+    <label>Nhà mạng</label>
+    <select name="telco" required>
+      <option value="VIETTEL">Viettel</option>
+      <option value="VINAPHONE">Vinaphone</option>
+      <option value="MOBIFONE">Mobifone</option>
+      <option value="VIETNAMOBILE">Vietnamobile</option>
+      <option value="SOHACOIN">Zing</option>
+      <option value="SCOIN">Scoin</option>
+      <option value="GOSU">Gosu</option>
+      <option value="ONCASH">OnCash</option>
+      <option value="BIT">Bit</option>
+      <option value="ANPAY">AnPay</option>
+      <option value="KUL">Kul</option>
+      <option value="VEGA">VCard</option>
+      <option value="KPLUS">K+</option>
+      <option value="AVG">AVG</option>
+      <option value="GARENA">Garena</option>
+      <option value="APPOTA">Appota</option>
+      <option value="ZING">Zing</option>
+      <option value="VCOIN">Vcoin</option>
+      <option value="GATE">Gate</option>
+      <option value="CAROT">TeaM (Carot)</option>
+      <option value="FUNCARD">FunCard</option>
+    </select>
+
+    <label>Mệnh giá</label>
+    <select name="amount" required>
+      <option value="5000">5.000đ</option>
+      <option value="10000">10.000đ</option>
+      <option value="20000">20.000đ</option>
+      <option value="30000">30.000đ</option>
+      <option value="50000">50.000đ</option>
+      <option value="100000">100.000đ</option>
+      <option value="200000">200.000đ</option>
+      <option value="300000">300.000đ</option>
+      <option value="500000">500.000đ</option>
+      <option value="1000000">1.000.000đ</option>
+      <option value="2000000">2.000.000đ</option>
+      <option value="5000000">5.000.000đ</option>
+    </select>
+
+    <label>Chọn NCC</label>
+    <select name="provider">
+      <option value="NCC1">NCC1</option>
+      <option value="NCC2">NCC2</option>
+      <option value="NCC3">NCC3</option>
+    </select>
+
+    <button type="submit">Gửi thẻ</button>
+  </form>
+</section>
+
+<script src="/public/js/main.js"></script>
+</body>
+</html>
