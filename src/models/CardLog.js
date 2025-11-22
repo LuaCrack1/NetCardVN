@@ -1,13 +1,12 @@
 import mongoose from "mongoose";
 
-const NCCStatusSchema = new mongoose.Schema(
+const CardLogSchema = new mongoose.Schema(
   {
-    provider: String, // NCC1 | NCC2 | NCC3
-    lastStatus: String, // up | down
-    lastCheck: Date
+    orderId: { type: mongoose.Schema.Types.ObjectId, ref: "Order" },
+    message: String,
+    raw: Object
   },
   { timestamps: true }
 );
 
-export default mongoose.model("NCCStatus", NCCStatusSchema);
-
+export default mongoose.model("CardLog", CardLogSchema);
